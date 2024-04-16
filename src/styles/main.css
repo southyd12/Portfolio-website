@@ -1,0 +1,786 @@
+:root {
+  box-sizing: border-box;
+  min-width: 375px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 1.5rem;
+}
+
+.page-header {
+  display:flex;
+  justify-content: space-between;
+  background-image: linear-gradient(45deg, hsl(51, 41%, 85%), hsl(120, 39%, 61%), hsl(51, 41%, 85%));
+  padding: 0.8em;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom: 3px solid hsl(120, 25%, 61%);
+  box-shadow: 0 3px 4px hsla(0, 0%, 2%, 0.141); 
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-links {
+  text-decoration: none;
+  color: hsl(203, 32%, 10%);
+}
+
+.personal-logo {
+  width: 30px;
+  height: auto;
+  margin: 0.4em;
+}
+
+.name-header {
+  margin: 0;
+  font-size: 1.5rem;
+  color: hsl(203, 32%, 10%);
+}
+
+.name-header:hover {
+  text-decoration: underline;
+  color: hsl(203, 32%, 10%);
+}
+
+.github-logo {
+  color:hsl(0, 0%, 0%);
+  margin-inline-start: 0.5em;
+  margin-inline-end: 0.5em;
+  width: 20px;
+  height: auto;
+}
+
+.github-logo:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.linkedin-logo {
+  color: hsl(210, 90%, 40%);
+  margin-inline-end: 0.5em;
+  width: 20px;
+  height: auto;
+}
+
+.linkedin-logo:hover {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(210, 90%, 40%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.email-envelope {
+  color: rgb(119, 121, 119);
+  margin-inline-end: 0.5em;
+  width: 20px;
+  height: auto;
+}
+
+.email-envelope:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(119, 121, 119);
+  border: 2px solid rgb(119, 121, 119);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.header-right {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  cursor: pointer;
+  color: hsl(203, 32%, 10%);
+  width: 20px;
+  height: auto;
+}
+
+.menu-list {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(45deg, hsl(51, 41%, 85%), hsl(120, 39%, 61%), hsl(51, 41%, 85%));
+  padding: 1em;
+  margin: 0;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.hide-menu {
+  opacity: 0;
+  visibility: hidden;
+  top: 70px;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.show-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+}
+
+.header-links.section-links {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.header-links.section-links:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  background-color: hsla(0, 0%, 88%, 0.905);
+  padding-block-end: 1.5em;
+}
+
+.intro-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image {
+  display: flex;
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+  border: hsl(120, 25%, 61%) solid 4px;
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.141); 
+  margin: 1em;
+}
+
+.intro-text-wrapper {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.intro-headline {
+  font-size: 1.7rem;
+  color: hsl(203, 32%, 10%);
+  margin: 0.5em;
+}
+
+.intro-text {
+  margin: 0.5em;
+}
+
+.intro-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.intro-link-github {
+  padding: 1em;
+  margin-inline-end: 0.5em;
+  margin-block-start: 0.3em;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.github-logo-intro {
+  color: hsl(0, 0%, 100%);
+  margin-inline-end: 0.5em;
+  width: 25px;
+  height: auto;
+}
+
+.intro-link-linkedin {
+  padding: 1em;
+  margin-inline-end: 0.5em;
+  margin-block-start: 0.3em;
+  background-color: hsl(210, 90%, 40%);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.linkedin-logo-intro {
+  color: hsl(0, 0%, 100%);
+  margin-inline-end: 0.5em;
+  width: 25px;
+  height: auto;
+}
+
+.intro-link-github:hover {
+  text-decoration: underline;
+}
+
+.intro-link-linkedin:hover {
+  text-decoration: underline;
+}
+
+#work {
+  background-color: hsla(125, 25%, 65%, 0.592);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage-work-title {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 0;
+  padding-top: 1.2em;
+}
+
+.work-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: hsla(0, 0%, 88%, 0.905);
+  width: 350px;
+  margin-block-end: 2.5em;
+  border: solid 3px hsl(120, 39%, 61%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.work-card-container:hover {
+  box-shadow: 0 12px 26px hsla(0, 0%, 2%, 0.778);
+}
+
+.work-image {
+  width: 350px;
+  height: auto;
+  border: solid 1px hsla(0, 4%, 70%, 0.778);
+}
+
+.work-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.work-link {
+  text-decoration: none;
+}
+
+.work-title {
+  color: hsl(203, 32%, 10%);
+  margin-inline-end: 0.9em;
+  margin-block-end: 0.5em;
+}
+
+.work-title:hover {
+  text-decoration: underline;
+}
+
+.github-logo-work {
+  color: hsl(0, 0%, 0%);
+  width: 35px;
+  height: auto;
+}
+
+.github-logo-work:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375);
+}
+
+.work-description {
+  font-size: 1.2rem;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0.2em;
+  margin-inline-end: 0.2em;
+  text-align: center;
+}
+
+.work-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-skill {
+  padding: 0.3em;
+  background-color: hsl(120, 39%, 61%);
+  margin-inline-end: 0.3em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  border-radius: 20%;
+  font-size: 1.4rem;
+}
+
+.skills-wrapper {
+  background-color:  hsla(0, 0%, 88%, 0.905);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.skills-title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  background-color:  hsla(0, 0%, 88%, 0.905);
+}
+
+.skills-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsla(125, 25%, 65%, 0.592);
+  width: 350px;
+  margin-block-end: 2.5em;
+  border: solid 3px hsl(120, 39%, 61%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375);
+}
+
+.skills-cards-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.skills-image {
+  width: 80px;
+  height: auto;
+}
+
+.skills-subheading {
+  font-size: 1.3rem;
+}
+
+.skills-list {
+    font-size: 1.2rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0.2em;
+    margin-inline-end: 0.2em;
+    text-align: center;
+  }
+
+#contact {
+    background-color: hsla(125, 25%, 65%, 0.592);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block-end: 3em;
+  }
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-contact-message {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-block-end: 0;
+  margin-inline-start: 0.3em;
+  margin-inline-end: 0.3em;
+}
+
+.second-contact-message {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0.3em;
+  margin-inline-end: 0.3em;
+}
+
+.linkedin-logo-contact {
+  color: hsl(210, 90%, 40%);
+  margin-inline-end: 0.5em;
+  padding: 1em;
+  width: 70px;
+  height: auto;
+}
+
+.linkedin-logo-contact:hover {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(210, 90%, 40%);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.email-envelope-contact {
+  color: rgb(119, 121, 119);
+  margin-inline-end: 0.5em;
+  padding: 1em;
+  width: 70px;
+  height: auto;
+}
+
+.email-envelope-contact:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(119, 121, 119);
+  border: 2px solid rgb(119, 121, 119);
+  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+}
+
+.footer {
+  background-color: hsla(0, 0%, 88%, 0.905);
+}
+
+.footer-text {
+  margin: 0;
+  padding: 1em 0.3em 1em 0;
+  text-align: end;
+  font-size: 1rem;
+}
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+
+  .personal-logo {
+    width: 35px;
+    height: auto;
+    margin: 0.5em;
+  }
+
+  .name-header {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .github-logo {
+    width: 25px;
+    height: auto;
+  }
+  
+  .linkedin-logo {
+    width: 25px;
+    height: auto;
+  }
+  
+  .email-envelope {
+    width: 25px;
+    height: auto;
+  }
+
+  .burger {
+    width: 25px;
+    height: auto;
+  }
+
+  .intro-headline {
+    font-size: 1.8rem;
+  }
+
+  .homepage-work-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-title {
+    font-size: 1.8rem;
+  }
+
+  .first-contact-message {
+    font-size: 4.5rem;
+  }
+  
+  .second-contact-message {
+    font-size: 4.5rem;
+  }
+
+  .linkedin-logo-contact {
+    width: 90px;
+    height: auto;
+  }
+
+  .email-envelope-contact {
+    width: 90px;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .personal-logo {
+    width: 40px;
+    height: auto;
+    margin: 0.5em;
+  }
+
+  .name-header {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .github-logo {
+    width: 30px;
+    height: auto;
+  }
+  
+  .linkedin-logo {
+    width: 30px;
+    height: auto;
+  }
+  
+  .email-envelope {
+    width: 30px;
+    height: auto;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+
+  .menu-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    top: 14px;
+    background-image: none;
+  }
+
+  .header-links.section-links {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.4em;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .intro-headline {
+    font-size: 2rem;
+  }
+
+  .homepage-work-title {
+    font-size: 2rem;
+  }
+
+  .work-card-container {
+    width: 500px;
+  }
+
+  .work-image {
+    width: 500px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .first-contact-message {
+    font-size: 4.8rem;
+  }
+  
+  .second-contact-message {
+    font-size: 4.8rem;
+  }
+
+  .linkedin-logo-contact {
+    width: 100px;
+    height: auto;
+  }
+
+  .email-envelope-contact {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .personal-logo {
+    width: 45px;
+    height: auto;
+    margin: 0.6em;
+  }
+
+  .name-header {
+    margin-inline-end: 0.3em;
+    font-size: 2.3rem;
+  }
+
+  .github-logo {
+    width: 35px;
+    height: auto;
+  }
+  
+  .linkedin-logo {
+    width: 35px;
+    height: auto;
+  }
+  
+  .email-envelope {
+    width: 35px;
+    height: auto;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+
+  .menu-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    top: 14px;
+    background-image: none;
+  }
+
+  .header-links.section-links {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.4em;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .intro-headline {
+    font-size: 2.3rem;
+  }
+
+  .homepage-work-title {
+    font-size: 2.3rem;
+  }
+
+  .work-card-container {
+    width: 700px;
+  }
+
+  .work-image {
+    width: 700px;
+  }
+
+  .skills-title {
+    font-size: 2.3rem;
+  }
+
+  .first-contact-message {
+    font-size: 5rem;
+  }
+  
+  .second-contact-message {
+    font-size: 5rem;
+  }
+
+  .linkedin-logo-contact {
+    width: 100px;
+    height: auto;
+  }
+
+  .email-envelope-contact {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  .personal-logo {
+    width: 45px;
+    height: auto;
+    margin: 0.6em;
+  }
+
+  .name-header {
+    margin-inline-end: 0.3em;
+    font-size: 2.3rem;
+  }
+
+  .github-logo {
+    width: 35px;
+    height: auto;
+    margin-inline-end: 0.8em;
+  }
+  
+  .linkedin-logo {
+    width: 35px;
+    height: auto;
+    margin-inline-end: 0.8em;
+  }
+  
+  .email-envelope {
+    width: 35px;
+    height: auto;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+
+  .menu-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    top: 14px;
+    background-image: none;
+  }
+
+  .header-links.section-links {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.4em;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .intro-headline {
+    font-size: 2.3rem;
+  }
+
+  .homepage-work-title {
+    font-size: 2.3rem;
+  }
+
+  .work-card-container {
+    width: 750px;
+  }
+
+  .work-image {
+    width: 750px;
+  }
+
+  .first-contact-message {
+    font-size: 5rem;
+  }
+  
+  .second-contact-message {
+    font-size: 5rem;
+  }
+
+  .linkedin-logo-contact {
+    width: 100px;
+    height: auto;
+  }
+
+  .email-envelope-contact {
+    width: 100px;
+    height: auto;
+  }
+}
+
