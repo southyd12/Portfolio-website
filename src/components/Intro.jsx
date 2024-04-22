@@ -22,7 +22,7 @@ function Intro() {
               I am a software engineer specialising in JavaScript, React and Node.
             </p>
             <p className="intro-text animate__animated animate__slideInDown">
-            With over a decade at the forefront of BBC's digital transformation, I excel in collaboration and increasing platform reach.
+            With over a decade at the forefront of BBC&apos;s digital transformation, I excel in collaboration and increasing platform reach.
             </p>
           </div>
           <div className="intro-links-wrapper">

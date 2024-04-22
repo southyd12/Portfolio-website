@@ -16,7 +16,6 @@ import drinkle from "../images/drinkle.png";
 import todoApp from "../images/todoApp.png";
 import homage from "../images/homage.png";
 import fourCards from "../images/fourCards.png";
-import portfolio from "../images/portfolio.png";
 import javascript from "../images/javascript.png";
 import react from "../images/react.png";
 import node from "../images/node.png";
