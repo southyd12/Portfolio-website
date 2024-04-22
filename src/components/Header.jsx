@@ -23,17 +23,13 @@ function Header() {
           <a className="header-links" href="">
             <img src={danielLogo} alt="Daniel South Logo" className="personal-logo"/>
           </a>
-          <a className="header-links" href="">
-            <h1 className="name-header">Daniel South</h1>
-          </a>
-          
-          <a className="header-links" href="https://github.com/southyd12">
+          <a className="header-links" href="https://github.com/southyd12" target="_blank">
             <FontAwesomeIcon icon={faGithub} alt="github logo" className="github-logo" />
           </a>
-          <a className="header-links" href="https://www.linkedin.com/in/daniel-south-6508a518/">
+          <a className="header-links" href="https://www.linkedin.com/in/daniel-south-6508a518/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} alt="linkedin logo" className="linkedin-logo" />
           </a>
-          <a className="header-links" href="mailto:southd12@gmail.com">
+          <a className="header-links" href="mailto:southd12@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} alt="envelope" className="email-envelope" />
           </a>
           </div>

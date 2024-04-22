@@ -11,10 +11,10 @@ function Contact() {
         <p className='first-contact-message'>Fancy a chat?</p>
         <p className='second-contact-message'>Get in touch!</p>
         <div className='contact-links-wrapper'>
-          <a className="contact-links" href="https://www.linkedin.com/in/daniel-south-6508a518/">
+          <a className="contact-links" href="https://www.linkedin.com/in/daniel-south-6508a518/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} alt="linkedin logo" className="linkedin-logo-contact" />
           </a>
-          <a className="contact-links" href="mailto:southd12@gmail.com">
+          <a className="contact-links" href="mailto:southd12@gmail.com" target="_blank">
           <FontAwesomeIcon icon={faEnvelope} alt="envelope" className="email-envelope-contact" />
           </a>
         </div>

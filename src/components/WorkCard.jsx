@@ -20,16 +20,17 @@ function WorkCard({
   return (
     <>
       <div className="work-card-container">
-        <a href={workUrl}>
+        <a href={workUrl} target="_blank">
           <img src={workImage} className="work-image" />
         </a>
         <div className="work-title-wrapper">
-          <a href={workUrl} className="work-link">
+          <a href={workUrl} className="work-link" target="_blank">
             <h2 className="work-title">{workTitle}</h2>           
           </a>
           <a
                 className="work-link-github"
                 href={githubUrl}
+                target="_blank"
               >
               <FontAwesomeIcon icon={faGithub} alt="github logo" className="github-logo-work" />
               </a>

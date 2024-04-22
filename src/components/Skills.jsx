@@ -13,9 +13,9 @@ function Skills({
     <>
                
           <div className="skills-cards">
-            <div className="skills-cards-heading">
-              <img src={skillsImage} className="skills-image" />
+            <div className="skills-cards-heading">             
               <h2 className="skills-subheading">{skillsHeading}</h2>
+              <img src={skillsImage} className="skills-image" />
             </div>
             <p className="skills-list">{skillsList}</p>
           </div>

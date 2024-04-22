@@ -91,14 +91,6 @@ function Home() {
         workDescription="This four cards layout was created by following Figma design files."
         workSkills={["Strong HTML", "Flexbox", "Figma"]}
       />
-                  <WorkCard 
-        workUrl=""
-        workImage={portfolio}
-        workTitle="Portfolio website"
-        githubUrl=""
-        workDescription="My portfolio website was created using React and React Router. The responsive layout was styled using Flexbox."
-        workSkills={["Strong HTML", "Flexbox", "React", "React Router"]}
-      />
     </section>
     <section id="skills">
       <h1 className="skills-title">My Skills</h1>

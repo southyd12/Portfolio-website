@@ -10,20 +10,17 @@ body {
 }
 
 p {
-  font-family: "Slabo 27px", serif;
   font-size: 1.5rem;
 }
 
 .page-header {
   display:flex;
   justify-content: space-between;
-  background-image: linear-gradient(45deg, hsl(51, 41%, 85%), hsl(120, 39%, 61%), hsl(51, 41%, 85%));
+  background-image: linear-gradient(45deg, hsl(53, 15%, 88%), hsl(80, 5%, 89%), hsl(50, 20%, 88%));
   padding: 0.8em;
   position: sticky;
   top: 0;
   z-index: 2;
-  border-bottom: 3px solid hsl(120, 25%, 61%);
-  box-shadow: 0 3px 4px hsla(0, 0%, 2%, 0.141); 
 }
 
 .header-left {
@@ -42,57 +39,46 @@ p {
   margin: 0.4em;
 }
 
-.name-header {
-  margin: 0;
-  font-size: 1.5rem;
-  color: hsl(203, 32%, 10%);
-}
-
-.name-header:hover {
-  text-decoration: underline;
-  color: hsl(203, 32%, 10%);
-}
-
 .github-logo {
   color:hsl(0, 0%, 0%);
-  margin-inline-start: 0.5em;
-  margin-inline-end: 0.5em;
+  padding: 0;
   width: 20px;
   height: auto;
+  display: inline-block;
+  margin: 0.5em;
+  transition: transform 0.3s ease;
 }
 
 .github-logo:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
-  border: 2px solid hsl(0, 0%, 0%);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+  transform: scale(1.2);
 }
 
 .linkedin-logo {
   color: hsl(210, 90%, 40%);
-  margin-inline-end: 0.5em;
+  margin: 0.5em;
+  padding: 0;
   width: 20px;
   height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .linkedin-logo:hover {
-  background-color: hsl(0, 0%, 100%);
-  border: 2px solid hsl(210, 90%, 40%);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+  transform: scale(1.2);
 }
 
 .email-envelope {
-  color: rgb(119, 121, 119);
-  margin-inline-end: 0.5em;
+  color: rgb(255, 255, 255);
+  margin: 0.5em;
+  padding: 0;
   width: 20px;
   height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .email-envelope:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(119, 121, 119);
-  border: 2px solid rgb(119, 121, 119);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+  transform: scale(1.2);
 }
 
 .header-right {
@@ -117,7 +103,8 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: linear-gradient(45deg, hsl(51, 41%, 85%), hsl(120, 39%, 61%), hsl(51, 41%, 85%));
+  background-image: linear-gradient(45deg, hsl(53, 15%, 88%), hsl(80, 5%, 89%), hsl(50, 20%, 88%));
+  box-shadow: 0 3px 4px hsla(0, 0%, 2%, 0.141); 
   padding: 1em;
   margin: 0;
   transition: opacity 0.7s ease, visibility 0.7s ease;
@@ -139,14 +126,17 @@ nav {
 .header-links.section-links {
   font-size: 0.9rem;
   font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
 }
 
 .header-links.section-links:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .intro {
-  background-color: hsla(0, 0%, 88%, 0.905);
+  background-color: hsl(0, 0%, 96%);
   padding-block-end: 1.5em;
 }
 
@@ -160,43 +150,47 @@ nav {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  border: hsl(120, 25%, 61%) solid 4px;
+  border: hsla(125, 25%, 65%, 0.592) solid 4px;
   box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.141); 
-  margin: 1em;
+  margin-block-start: 6em;
 }
 
 .intro-text-wrapper {
   text-align: center;
-  margin: 0.5em;
 }
 
 .intro-headline {
   font-size: 1.7rem;
   color: hsl(203, 32%, 10%);
-  margin: 0.5em;
+  margin: 1em;
 }
 
 .intro-text {
-  margin: 0.5em;
+  margin-block-end: 1.5em;
+  margin-block-start: 0;
+  max-width: 465px;
+  overflow-wrap: break-word;
+  display: inline-block;
+  text-align: center;
 }
 
 .intro-links-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5em;
+  margin-block-end: 4em;
 }
 
 .intro-link-github {
   padding: 1em;
   margin-inline-end: 0.5em;
-  margin-block-start: 0.3em;
   background-color: hsl(0, 0%, 0%);
-  border-radius: 20%;
+  border-radius: 5%;
   display: flex;
   align-items: center;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .github-logo-intro {
@@ -209,13 +203,13 @@ nav {
 .intro-link-linkedin {
   padding: 1em;
   margin-inline-end: 0.5em;
-  margin-block-start: 0.3em;
   background-color: hsl(210, 90%, 40%);
-  border-radius: 20%;
+  border-radius: 5%;
   display: flex;
   align-items: center;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .linkedin-logo-intro {
@@ -226,11 +220,11 @@ nav {
 }
 
 .intro-link-github:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .intro-link-linkedin:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 #work {
@@ -238,13 +232,14 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-block-end: 3em;
 }
 
 .homepage-work-title {
   display: flex;
   justify-content: center;
-  margin-block-start: 0;
-  padding-top: 1.2em;
+  margin-block-start: 3em;
+  font-size: 1.7rem;
 }
 
 .work-card-container {
@@ -252,9 +247,10 @@ nav {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color: hsla(0, 0%, 88%, 0.905);
+  background-color: hsl(0, 0%, 96%);
   width: 350px;
-  margin-block-end: 2.5em;
+  margin-block-end: 3em;
+  padding-block-end: 1em;
   border: solid 3px hsl(120, 39%, 61%);
   box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
 }
@@ -271,8 +267,10 @@ nav {
 
 .work-title-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
 }
 
 .work-link {
@@ -281,34 +279,26 @@ nav {
 
 .work-title {
   color: hsl(203, 32%, 10%);
-  margin-inline-end: 0.9em;
-  margin-block-end: 0.5em;
-}
-
-.work-title:hover {
-  text-decoration: underline;
+  margin-block-end: 0.5em; 
 }
 
 .github-logo-work {
   color: hsl(0, 0%, 0%);
   width: 35px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
 .github-logo-work:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
-  border: 2px solid hsl(0, 0%, 0%);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375);
+  transform: scale(1.2);
 }
 
 .work-description {
   font-size: 1.2rem;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  margin-inline-start: 0.2em;
-  margin-inline-end: 0.2em;
+  margin-inline-start: 0.3em;
+  margin-inline-end: 0.3em;
   text-align: center;
+  padding-block-end: 1em;
 }
 
 .work-skills {
@@ -321,28 +311,32 @@ nav {
   padding: 0.3em;
   background-color: hsl(120, 39%, 61%);
   margin-inline-end: 0.3em;
-  margin-block-start: 0.4em;
-  margin-block-end: 0.4em;
-  border-radius: 20%;
+  margin-inline-start: 0.3em;
+  margin-block-start: 0;
+  margin-block-end: 0.6em;
+  border-radius: 5%;
   font-size: 1.4rem;
 }
 
 .skills-wrapper {
-  background-color:  hsla(0, 0%, 88%, 0.905);
+  background-color:  hsl(0, 0%, 96%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
+  padding-block-start: 1em;
+  padding-block-end: 4em;
 }
 
 .skills-title {
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-top: 1.2em;
-  padding-bottom: 1em;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
   display: flex;
   justify-content: center;
-  background-color:  hsla(0, 0%, 88%, 0.905);
+  background-color:  hsl(0, 0%, 96%);
+  font-size: 1.7rem;
 }
 
 .skills-cards {
@@ -351,32 +345,35 @@ nav {
   flex-direction: column;
   background-color: hsla(125, 25%, 65%, 0.592);
   width: 350px;
-  margin-block-end: 2.5em;
+  margin-block-end: 1.5em;
+  padding: 1em;
   border: solid 3px hsl(120, 39%, 61%);
   box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375);
 }
 
 .skills-cards-heading {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5em;
 }
 
 .skills-image {
   width: 80px;
   height: auto;
+  padding-block-end: 0.5em;
 }
 
 .skills-subheading {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin-block-end: 0.5em;
 }
 
 .skills-list {
     font-size: 1.2rem;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
-    margin-inline-start: 0.2em;
-    margin-inline-end: 0.2em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0.5em;
     text-align: center;
   }
 
@@ -385,7 +382,8 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-block-end: 3em;
+    padding-block-start: 2em;
+    padding-block-end: 5em;
   }
 
 .contact-wrapper {
@@ -395,7 +393,7 @@ nav {
 }
 
 .first-contact-message {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
   margin-block-end: 0;
@@ -404,7 +402,7 @@ nav {
 }
 
 .second-contact-message {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
   margin-block-start: 0;
@@ -419,37 +417,34 @@ nav {
   padding: 1em;
   width: 70px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
 .linkedin-logo-contact:hover {
-  background-color: hsl(0, 0%, 100%);
-  border: 2px solid hsl(210, 90%, 40%);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+  transform: scale(1.2);
 }
 
 .email-envelope-contact {
-  color: rgb(119, 121, 119);
+  color: hsl(0, 0%, 100%);
   margin-inline-end: 0.5em;
   padding: 1em;
   width: 70px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
 .email-envelope-contact:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(119, 121, 119);
-  border: 2px solid rgb(119, 121, 119);
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.375); 
+  transform: scale(1.2);
 }
 
 .footer {
-  background-color: hsla(0, 0%, 88%, 0.905);
+  background-color: hsl(0, 0%, 96%);
 }
 
 .footer-text {
   margin: 0;
-  padding: 1em 0.3em 1em 0;
-  text-align: end;
+  padding: 2em 0 2em 0;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -460,11 +455,6 @@ nav {
     width: 35px;
     height: auto;
     margin: 0.5em;
-  }
-
-  .name-header {
-    margin: 0;
-    font-size: 1.8rem;
   }
 
   .github-logo {
@@ -489,6 +479,10 @@ nav {
 
   .intro-headline {
     font-size: 1.8rem;
+  }
+
+  .intro-text {
+    max-width: 525px;
   }
 
   .homepage-work-title {
@@ -527,11 +521,6 @@ nav {
     margin: 0.5em;
   }
 
-  .name-header {
-    margin: 0;
-    font-size: 2rem;
-  }
-
   .github-logo {
     width: 30px;
     height: auto;
@@ -557,6 +546,7 @@ nav {
     display: flex;
     top: 14px;
     background-image: none;
+    box-shadow: none;
   }
 
   .header-links.section-links {
@@ -573,6 +563,10 @@ nav {
     font-size: 2rem;
   }
 
+  .intro-text {
+    max-width: 800px;
+  }
+
   .homepage-work-title {
     font-size: 2rem;
   }
@@ -585,8 +579,17 @@ nav {
     width: 500px;
   }
 
+  .skills-wrapper {
+    gap: 2em;
+    padding-block-end: 5em;
+  }
+
   .skills-title {
     font-size: 2rem;
+  }
+
+  .skills-cards {
+    margin-block-end: 0;
   }
 
   .first-contact-message {
@@ -616,11 +619,6 @@ nav {
     margin: 0.6em;
   }
 
-  .name-header {
-    margin-inline-end: 0.3em;
-    font-size: 2.3rem;
-  }
-
   .github-logo {
     width: 35px;
     height: auto;
@@ -646,6 +644,7 @@ nav {
     display: flex;
     top: 14px;
     background-image: none;
+    box-shadow: none;
   }
 
   .header-links.section-links {
@@ -662,6 +661,10 @@ nav {
     font-size: 2.3rem;
   }
 
+  .intro-text {
+    max-width: 850px;
+  }
+
   .homepage-work-title {
     font-size: 2.3rem;
   }
@@ -674,8 +677,22 @@ nav {
     width: 700px;
   }
 
+  .work-description {
+    margin-inline-start: 0.8em;
+    margin-inline-end: 0.8em;
+  }
+
   .skills-title {
     font-size: 2.3rem;
+  }
+
+  .skills-wrapper {
+    gap: 2em;
+    padding-block-end: 5em;
+  }
+
+  .skills-cards {
+    margin-block-end: 0;
   }
 
   .first-contact-message {
@@ -705,11 +722,6 @@ nav {
     margin: 0.6em;
   }
 
-  .name-header {
-    margin-inline-end: 0.3em;
-    font-size: 2.3rem;
-  }
-
   .github-logo {
     width: 35px;
     height: auto;
@@ -737,6 +749,7 @@ nav {
     display: flex;
     top: 14px;
     background-image: none;
+    box-shadow: none;
   }
 
   .header-links.section-links {
@@ -753,6 +766,10 @@ nav {
     font-size: 2.3rem;
   }
 
+  .intro-text {
+    max-width: 850px;
+  }
+
   .homepage-work-title {
     font-size: 2.3rem;
   }
@@ -763,6 +780,24 @@ nav {
 
   .work-image {
     width: 750px;
+  }
+
+  .work-description {
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+  }
+
+  .skills-title {
+    font-size: 2.3rem;
+  }
+
+  .skills-wrapper {
+    gap: 2em;
+    padding-block-end: 5em;
+  }
+
+  .skills-cards {
+    margin-block-end: 0;
   }
 
   .first-contact-message {

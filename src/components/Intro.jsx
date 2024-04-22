@@ -29,10 +29,11 @@ function Intro() {
             <a
                 className="intro-link-github"
                 href="https://github.com/southyd12"
+                target="_blank"
               >
               <FontAwesomeIcon icon={faGithub} alt="github logo" className="github-logo-intro" />GitHub
               </a>
-              <a className="intro-link-linkedin" href="https://www.linkedin.com/in/daniel-south-6508a518/">
+              <a className="intro-link-linkedin" href="https://www.linkedin.com/in/daniel-south-6508a518/" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} alt="linkedin logo" className="linkedin-logo-intro" />LinkedIn
               </a>
             </div>
