@@ -51,7 +51,7 @@ function Home() {
         workSkills={["React", "MUI", "REST API", "React Hook Form", "Yup"]}
       />
        <WorkCard 
-        workUrl="https://661e99908ce25d260d561c8a--lovely-chebakia-14cd3d.netlify.app/"
+        workUrl="https://66277dffada07f7e8aec27c7--inspiring-douhua-a730b2.netlify.app/"
         workImage={dashboard}
         workTitle="News Dashboard"
         githubUrl="https://github.com/southyd12/News-dashboard"
@@ -75,7 +75,7 @@ function Home() {
         workSkills={["Local storage", "Bootstrap"]}
       />
       <WorkCard 
-        workUrl="https://661e8f6484318e2aaa181a5c--elaborate-biscuit-fb9960.netlify.app/"
+        workUrl="https://6627d5df68eb3b052e52bc53--hilarious-caramel-407087.netlify.app/"
         workImage={homage}
         workTitle="BBC News homage"
         githubUrl="https://github.com/southyd12/BBC-News-website-"
