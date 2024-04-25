@@ -14,7 +14,7 @@ function Intro() {
               src={Daniel}
               alt="Headshot of Daniel smiling"
               width="350px"
-              height="197px"           
+              height="466px"           
             />
           </div>
           <div className="intro-text-wrapper">
