@@ -148,10 +148,8 @@ nav {
 .intro-image {
   display: flex;
   border-radius: 50%;
-  width: 300px;
+  width: 350px;
   height: auto;
-  border: hsla(125, 25%, 65%, 0.592) solid 4px;
-  box-shadow: 0 4px 4px hsla(0, 0%, 2%, 0.141); 
   margin-block-start: 6em;
 }
 
@@ -196,7 +194,7 @@ nav {
 .github-logo-intro {
   color: hsl(0, 0%, 100%);
   margin-inline-end: 0.5em;
-  width: 25px;
+  width: 40px;
   height: auto;
 }
 
@@ -215,7 +213,7 @@ nav {
 .linkedin-logo-intro {
   color: hsl(0, 0%, 100%);
   margin-inline-end: 0.5em;
-  width: 25px;
+  width: 40px;
   height: auto;
 }
 

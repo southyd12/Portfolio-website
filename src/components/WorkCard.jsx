@@ -9,6 +9,8 @@ function WorkCard({
   // eslint-disable-next-line react/prop-types
   workImage,
   // eslint-disable-next-line react/prop-types
+  alt,
+  // eslint-disable-next-line react/prop-types
   workTitle,
   // eslint-disable-next-line react/prop-types
   githubUrl,
@@ -21,7 +23,7 @@ function WorkCard({
     <>
       <div className="work-card-container">
         <a href={workUrl} target="_blank">
-          <img src={workImage} className="work-image" />
+          <img src={workImage} alt={alt} className="work-image" width="350px" height="197px" />
         </a>
         <div className="work-title-wrapper">
           <a href={workUrl} className="work-link" target="_blank">
@@ -30,6 +32,7 @@ function WorkCard({
           <a
                 className="work-link-github"
                 href={githubUrl}
+                aria-label="Link to Daniel South GitHub repository page"
                 target="_blank"
               >
               <FontAwesomeIcon icon={faGithub} alt="github logo" className="github-logo-work" />
