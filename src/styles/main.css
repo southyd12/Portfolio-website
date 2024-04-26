@@ -13,6 +13,10 @@ p {
   font-size: 1.5rem;
 }
 
+a {
+  user-select: none;
+}
+
 .page-header {
   display:flex;
   justify-content: space-between;
@@ -37,6 +41,11 @@ p {
   width: 30px;
   height: auto;
   margin: 0.4em;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
 .github-logo {
@@ -81,8 +90,11 @@ p {
   transform: scale(1.2);
 }
 
-.header-right {
-  display: flex;
+.divider {
+  height: 20px;
+  width: 1.5px;
+  background-color: hsl(203, 32%, 10%);
+  margin: 0 0.5em;
 }
 
 nav {
@@ -105,7 +117,7 @@ nav {
   right: 0;
   background-image: linear-gradient(45deg, hsl(53, 15%, 88%), hsl(80, 5%, 89%), hsl(50, 20%, 88%));
   box-shadow: 0 3px 4px hsla(0, 0%, 2%, 0.141); 
-  padding: 1em;
+  padding: 2em;
   margin: 0;
   transition: opacity 0.7s ease, visibility 0.7s ease;
 }
@@ -154,7 +166,9 @@ nav {
 }
 
 .intro-text-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-headline {
@@ -168,20 +182,19 @@ nav {
   margin-block-start: 0;
   max-width: 465px;
   overflow-wrap: break-word;
-  display: inline-block;
   text-align: center;
 }
 
 .intro-links-wrapper {
   display: flex;
+  gap: 1em;
   justify-content: center;
   align-items: center;
   margin-block-end: 4em;
 }
 
 .intro-link-github {
-  padding: 1em;
-  margin-inline-end: 0.5em;
+  padding: 1em 1em 1em 0.5em;
   background-color: hsl(0, 0%, 0%);
   border-radius: 5%;
   display: flex;
@@ -193,14 +206,12 @@ nav {
 
 .github-logo-intro {
   color: hsl(0, 0%, 100%);
-  margin-inline-end: 0.5em;
   width: 40px;
   height: auto;
 }
 
 .intro-link-linkedin {
-  padding: 1em;
-  margin-inline-end: 0.5em;
+  padding: 1em 1em 1em 0.5em;
   background-color: hsl(210, 90%, 40%);
   border-radius: 5%;
   display: flex;
@@ -212,7 +223,6 @@ nav {
 
 .linkedin-logo-intro {
   color: hsl(0, 0%, 100%);
-  margin-inline-end: 0.5em;
   width: 40px;
   height: auto;
 }
@@ -470,6 +480,10 @@ nav {
     height: auto;
   }
 
+  .divider {
+    width: 2px;
+  }
+
   .burger {
     width: 25px;
     height: auto;
@@ -534,6 +548,14 @@ nav {
     height: auto;
   }
 
+  .header-right {
+    flex-direction: row-reverse;
+  }
+
+  .divider {
+    width: 2px;
+  }
+
   .burger {
     visibility: hidden;
   }
@@ -542,7 +564,8 @@ nav {
     visibility: visible;
     opacity: 1;
     display: flex;
-    top: 14px;
+    top: -7px;
+    right: 135px;
     background-image: none;
     box-shadow: none;
   }
@@ -617,6 +640,10 @@ nav {
     margin: 0.6em;
   }
 
+  .header-right {
+    flex-direction: row-reverse;
+  }
+
   .github-logo {
     width: 35px;
     height: auto;
@@ -632,6 +659,10 @@ nav {
     height: auto;
   }
 
+  .divider {
+    width: 2px;
+  }
+
   .burger {
     visibility: hidden;
   }
@@ -640,7 +671,8 @@ nav {
     visibility: visible;
     opacity: 1;
     display: flex;
-    top: 14px;
+    top: -8px;
+    right: 145px;
     background-image: none;
     box-shadow: none;
   }
@@ -720,6 +752,10 @@ nav {
     margin: 0.6em;
   }
 
+  .header-right {
+    flex-direction: row-reverse;
+  }
+
   .github-logo {
     width: 35px;
     height: auto;
@@ -737,6 +773,10 @@ nav {
     height: auto;
   }
 
+  .divider {
+    width: 2px;
+  }
+
   .burger {
     visibility: hidden;
   }
@@ -745,7 +785,8 @@ nav {
     visibility: visible;
     opacity: 1;
     display: flex;
-    top: 14px;
+    top: -8px;
+    right: 155px;
     background-image: none;
     box-shadow: none;
   }
