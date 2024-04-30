@@ -20,7 +20,7 @@ function Header() {
     <>
       <header className="page-header">
           <div className="header-left">
-            <a className="header-links" aria-label="Link to top of Daniel South portfolio page" href="">
+            <a className="header-links" aria-label="Link to top of Daniel South portfolio page" href="https://www.daniel-south.com/">
               <img src={danielLogo} alt="Daniel South Logo" className="personal-logo" width="30px" height="17px"/>
             </a>
           </div>
