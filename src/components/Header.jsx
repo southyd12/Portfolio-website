@@ -43,7 +43,7 @@ function Header() {
                 <li><a className="header-links section-links" href="#work">Work</a></li>
                 <li><a className="header-links section-links" href="#skills">Skills</a></li>
                 <li><a className="header-links section-links" href="#contact">Contact</a></li>
-                <li><a className="header-links section-links" href="" target="_blank" rel="noopener noreferrer">CV</a></li>
+                <li><a className="header-links section-links" href="/src/pdfs/daniel_south_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
               </ul>
               </nav>      
           </div>
