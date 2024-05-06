@@ -85,7 +85,7 @@ function Home() {
         alt="Screenshot of homage to the BBC News website"
         workTitle="BBC News homage"
         githubUrl="https://github.com/southyd12/BBC-News-website-"
-        workDescription="A recreation of the BBC News website using semantically valid HTML and Flex and Grid for layout."
+        workDescription="A re-creation of the BBC News website using semantically valid HTML and Flex and Grid for layout."
         workSkills={["Strong HTML", "Flexbox", "Grid"]}
       />
             <WorkCard 
